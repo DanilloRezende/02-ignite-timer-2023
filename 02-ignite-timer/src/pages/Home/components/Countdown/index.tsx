@@ -17,7 +17,7 @@ import { CyclesContext } from '../../../../contexts/CyclesContext'
       if (activeCycle) {
         interval = setInterval(() => {
           const secondsDifference = differenceInSeconds(
-            new Date(),
+            new Date(activeCycle.startDate),
             activeCycle.startDate,
           )
   
